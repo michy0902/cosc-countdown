@@ -1,6 +1,7 @@
 body{
     background-color: #333334;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
 }
 
 .container{
@@ -42,10 +43,12 @@ img{
     padding-top: 20px;
 }
 .launch-time div{
-    flex-basis: 100px;
+    flex-basis: 190px;
     background-color: #A9A9A9;
     text-align: center;
     border-radius: 5px;
+    padding: 0px;
+    margin: 5px;
 }
 .launch-time div p {
     font-size: 30px;
