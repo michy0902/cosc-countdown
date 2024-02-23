@@ -3,6 +3,10 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+
 .container{
     position: relative;
     display: flex;
@@ -70,8 +74,9 @@ img{
       justify-content: center;
     }
 } */
- @media (min-width: 360px) {
-     .container {
+
+ @media (max-width: 720px) {
+    .container {
       display: grid;
       place-items: center;
       justify-content: center;
@@ -85,5 +90,5 @@ img{
 
     .text{
         align-items: center;
-    } 
- }
+    }
+} 
