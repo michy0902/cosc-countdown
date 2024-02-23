@@ -1,6 +1,6 @@
 //we create a date object and set the time to the day we want it to count down to
 //getTime is to get the timestamp in milliseconds 
-var countDownDate = new Date("Mar 20, 2024").getTime();
+var countDownDate = new Date("Mar 1, 2024").getTime();
 //we set an interval that is executed every one second(1000 millisecond)
 var x = setInterval(function(){
     // this collects the curent date and time and assigns it to the variable now
