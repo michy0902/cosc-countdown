@@ -1,7 +1,6 @@
 body{
     background-color: #333334;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    overflow: hidden;
 }
 
 .container{
@@ -64,19 +63,27 @@ img{
 }
 
 
-/* @media (min-width: 280px) {
+ /* @media (min-width: 280px) {
     .container {
       display: grid;
       place-items: center;
+      justify-content: center;
     }
 } */
-
-@media (max-width: 720px) {
-    .container {
+ @media (min-width: 360px) {
+     .container {
       display: grid;
       place-items: center;
+      justify-content: center;
     }
-}
 
+    img{
+        height: 250px;
+        width: 250px;
+        padding-right: 10px;
+    }
 
-
+    .text{
+        align-items: center;
+    } 
+ }
