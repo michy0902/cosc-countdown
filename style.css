@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
+
 h1{
     color: grey;
 }
@@ -28,10 +29,11 @@ h3{
 }
 
 img{
-    border-radius: 10px;
     width: 400px;
-    padding-left: 170px;
-
+    border-radius: 10px;
+    padding-left: 150px;
+    /* border-top-left-radius: 20vh;
+    border-bottom-left-radius: 20vh; */
 }
 
 
@@ -67,15 +69,8 @@ img{
 }
 
 
- /* @media (min-width: 280px) {
-    .container {
-      display: grid;
-      place-items: center;
-      justify-content: center;
-    }
-} */
 
- @media (max-width: 720px) {
+ /* @media (max-width: 720px) {
     .container {
       display: grid;
       place-items: center;
@@ -85,11 +80,23 @@ img{
     img{
         height: 250px;
         width: 250px;
-        padding-right: 10px;
-        border-radius: 10px;
+        border-radius: 20px;
+    }
+}  */
+
+@media (max-width: 720px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+ /* align everything to the right */
+      justify-content: center;
+      padding: 0 20px;
+      width: 100%;
     }
 
-    .text{
-        align-items: center;
+    img {
+        width: 50%;
+        border-radius: 10px;
     }
-} 
+}

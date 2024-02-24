@@ -18,6 +18,14 @@ var x = setInterval(function(){
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
+    // when the countdown is done, it'll stop it from counting backwards and just stay at 0
+    if(distance < 0){
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+    }
     
     //the 1000 is the interaval which is in millisecond(1 second)
 },1000);
