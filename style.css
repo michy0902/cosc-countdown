@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
   }
 
 .container{
-    position: relative;
+    /* position: relative; */
     display: flex;
     position: absolute;
     padding: 200px 250px;
